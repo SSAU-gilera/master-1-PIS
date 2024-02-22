@@ -1,0 +1,68 @@
+:host {
+    --margin: 20px;
+    --color: #DFD9E8;
+    --border-radius: 5px;
+}
+
+.info {
+    flex: 14%;
+    background: #EDE7F6;
+    min-width: 400px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 3%;
+}
+
+.button {
+    margin: var(--margin);
+    border: 1px solid #3F51B5;
+    color: #3F51B5;
+}
+
+.button.action {
+    margin-left: 0px;
+}
+
+.map-container {
+    flex: 70%;
+}
+
+.map {
+    height: 90vh;
+}
+
+.choose-event {
+    margin: 20px;
+}
+
+.messanger-buttons {
+    display: flex;
+}
+
+.left-button, .right-button {
+    border-radius: 0px;
+    width: 50%;
+}
+
+.left-button.active {
+    background: #EDE7F6;
+}
+
+.right-button:not(.active) {
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.right-button.active {
+    background: #EDE7F6;
+}
+
+.left-button:not(.active) {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
